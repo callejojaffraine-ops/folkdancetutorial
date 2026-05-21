@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folkdance Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body class="page-gallery">
+  <div id="preloader" class="preloader">
+    <div class="preloader__spinner"></div>
+    <p>Loading gallery...</p>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">FolkDance</a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="tutorials.html" class="nav__link">Tutorials</a>
+        <a href="gallery.html" class="nav__link active">Gallery</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">Moon</button>
+        <button class="icon-btn" id="musicToggle" aria-label="Toggle background music">Music</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-header page-header--small">
+      <div class="container">
+        <span class="eyebrow">Gallery</span>
+        <h1>Carinosa and Itik-Itik Gallery</h1>
+        <p>Browse the performance videos connected to the available tutorials.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container grid grid--2" id="galleryGrid">
+        <div class="gallery-item glass-card" data-type="video" data-src="videos/Gallery/Philippine Folk Dances - Track 02 - Carinosa.mp4">
+          <div class="gallery-thumb gallery-thumb--carinosa"></div>
+          <span class="gallery-label">Carinosa performance</span>
+        </div>
+        <div class="gallery-item glass-card" data-type="video" data-src="videos/Gallery/Philippine Folk Dances - Track 03 - Itik Itik.mp4">
+          <div class="gallery-thumb gallery-thumb--itik"></div>
+          <span class="gallery-label">Itik-Itik performance</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">x</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">FolkDance</a>
+        <p>Videos that support your Carinosa and Itik-Itik practice.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@folkdance.com</p>
+        <p>Phone: +63 912 345 6789</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social-links">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>Copyright 2026 Folkdance Tutorial Learning Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">Up</button>
+  <div class="floating-socials">
+    <a href="#" aria-label="WhatsApp">WA</a>
+    <a href="#" aria-label="Facebook">FB</a>
+    <a href="#" aria-label="Instagram">IG</a>
+  </div>
+  <audio id="bgMusic" loop src="https://assets.mixkit.co/music/preview/mixkit-joyful-upbeat-folk-accordion-1316.mp3"></audio>
+</body>
+</html>

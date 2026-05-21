@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Folkdance Tutorials</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body class="page-contact">
+  <div id="preloader" class="preloader">
+    <div class="preloader__spinner"></div>
+    <p>Loading contact details...</p>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">FolkDance</a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="tutorials.html" class="nav__link">Tutorials</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn" id="musicToggle" aria-label="Toggle background music">🎵</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-header page-header--small">
+      <div class="container">
+        <span class="eyebrow">Get in touch</span>
+        <h1>Reach out for support, partnerships, or bookings</h1>
+        <p>We are here to help with tutorials, event collaborations, and cultural programs.</p>
+      </div>
+    </section>
+
+    <section class="section contact-grid">
+      <div class="container grid grid--2">
+        <div class="glass-card contact-panel">
+          <h2>Contact form</h2>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Your email" />
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" placeholder="Message subject" />
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us how we can help"></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="glass-card contact-info">
+          <h2>Contact information</h2>
+          <p>We respond quickly to instructors, event organizers, and dance learners.</p>
+          <div class="info-block">
+            <h4>Email</h4>
+            <p>hello@folkdance.com</p>
+          </div>
+          <div class="info-block">
+            <h4>Phone</h4>
+            <p>+63 912 345 6789</p>
+          </div>
+          <div class="info-block">
+            <h4>Location</h4>
+            <p>Manila, Philippines</p>
+          </div>
+          <div class="social-links contact-socials">
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">YT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section">
+      <div class="container">
+        <div class="map-card glass-card">
+          <h2>Find us on the map</h2>
+          <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5437091161213!2d121.03996911530162!3d14.610349389847254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7cf3a7b18e3%3A0xc827fe6b4b661d60!2sManila!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">FolkDance</a>
+        <p>Ready to collaborate on your next cultural dance project.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@folkdance.com</p>
+        <p>Phone: +63 912 345 6789</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social-links">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>© 2026 Folkdance Tutorial Learning Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <div class="floating-socials">
+    <a href="#" aria-label="WhatsApp">WA</a>
+    <a href="#" aria-label="Facebook">FB</a>
+    <a href="#" aria-label="Instagram">IG</a>
+  </div>
+  <audio id="bgMusic" loop src="https://assets.mixkit.co/music/preview/mixkit-joyful-upbeat-folk-accordion-1316.mp3"></audio>
+</body>
+</html>

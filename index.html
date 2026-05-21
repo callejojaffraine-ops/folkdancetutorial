@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Folkdance Tutorial Learning Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body class="page-home">
+  <div id="preloader" class="preloader">
+    <div class="preloader__spinner"></div>
+    <p>Preparing your cultural dance experience...</p>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">FolkDance</a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="tutorials.html" class="nav__link">Tutorials</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">Moon</button>
+        <button class="icon-btn" id="musicToggle" aria-label="Toggle background music">Music</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--video">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="videos/Gallery/Philippine Folk Dances - Track 02 - Carinosa.mp4" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <span class="eyebrow">Cultural dance education</span>
+        <h1>Learn Philippine Folk Dance <span id="typingText"></span></h1>
+        <p>Master Carinosa and Itik-Itik with figure-by-figure lessons, elegant storytelling, and HD choreography.</p>
+        <div class="hero__cta">
+          <a href="tutorials.html" class="btn btn-primary">Start Learning</a>
+          <a href="#featured" class="btn btn-secondary">Watch Tutorials</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" id="featured">
+      <div class="container section__header">
+        <span class="eyebrow">Featured dances</span>
+        <h2>Celebrate Filipino artistry through Carinosa and Itik-Itik tutorials</h2>
+      </div>
+      <div class="grid grid--2">
+        <article class="dance-card glass-card">
+          <div class="dance-card__visual dance-card__visual--carinosa"></div>
+          <div class="dance-card__body">
+            <h3>Carinosa</h3>
+            <p>A romantic courtship dance with graceful hand movements, soft steps, and elegant partner work.</p>
+            <div class="tag-wrap">
+              <span class="tag">Beginner</span>
+              <span class="tag tag--gold">Courtship dance</span>
+            </div>
+            <a href="tutorials.html#carinosa" class="btn btn-tertiary">View Tutorial</a>
+          </div>
+        </article>
+
+        <article class="dance-card glass-card">
+          <div class="dance-card__visual dance-card__visual--itik"></div>
+          <div class="dance-card__body">
+            <h3>Itik-Itik</h3>
+            <p>A lively folk dance inspired by duck movements, quick steps, wrist flicks, and playful energy.</p>
+            <div class="tag-wrap">
+              <span class="tag">Beginner</span>
+              <span class="tag tag--gold">Playful dance</span>
+            </div>
+            <a href="tutorials.html#itik-itik" class="btn btn-tertiary">View Tutorial</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stats stats--split">
+      <div class="container grid grid--4 stats__grid">
+        <div class="stat-card glass-card">
+          <h3><span class="counter" data-target="2">0</span></h3>
+          <p>Featured Dances</p>
+        </div>
+        <div class="stat-card glass-card">
+          <h3><span class="counter" data-target="16">0</span></h3>
+          <p>Figure Tutorials</p>
+        </div>
+        <div class="stat-card glass-card">
+          <h3><span class="counter" data-target="2">0</span></h3>
+          <p>Dance Categories</p>
+        </div>
+        <div class="stat-card glass-card">
+          <h3><span class="counter" data-target="18">0</span></h3>
+          <p>Video Lessons</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-choose">
+      <div class="container section__header">
+        <span class="eyebrow">Why choose us</span>
+        <h2>Learn with clarity, culture, and confidence</h2>
+      </div>
+      <div class="grid grid--4">
+        <div class="feature-card glass-card">
+          <h3>Easy learning</h3>
+          <p>Structured tutorials let you practice every step without overwhelm.</p>
+        </div>
+        <div class="feature-card glass-card">
+          <h3>Figure-by-figure</h3>
+          <p>Detail-rich breakdowns guide each movement and formation clearly.</p>
+        </div>
+        <div class="feature-card glass-card">
+          <h3>HD videos</h3>
+          <p>Watch each figure and repeat difficult parts at your own pace.</p>
+        </div>
+        <div class="feature-card glass-card">
+          <h3>Beginner friendly</h3>
+          <p>Great for students, teachers, performers, and cultural enthusiasts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container section__header">
+        <span class="eyebrow">Testimonials</span>
+        <h2>Voices from our dance community</h2>
+      </div>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <button class="slider-btn slider-btn--prev" id="prevTestimonial" aria-label="Previous testimonial">&lt;</button>
+        <div class="testimonial-track">
+          <article class="testimonial-card glass-card active">
+            <p>"The detailed tutorials helped me learn Carinosa fast. The pace is perfect for busy learners."</p>
+            <h4>Maria L.</h4>
+            <span>Hobbyist dancer</span>
+          </article>
+          <article class="testimonial-card glass-card">
+            <p>"The Itik-Itik figures are easy to follow because each movement has its own video."</p>
+            <h4>Jason R.</h4>
+            <span>Teacher</span>
+          </article>
+          <article class="testimonial-card glass-card">
+            <p>"The step breakdowns make practice clearer and more organized."</p>
+            <h4>Anne S.</h4>
+            <span>Performer</span>
+          </article>
+        </div>
+        <button class="slider-btn slider-btn--next" id="nextTestimonial" aria-label="Next testimonial">&gt;</button>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container section__header">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions about learning folk dance?</h2>
+      </div>
+      <div class="accordion" id="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger">Do I need prior dance training?</button>
+          <div class="accordion-panel">
+            <p>No experience is required. Carinosa and Itik-Itik are broken into accessible steps for beginners.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">How many figures are included?</button>
+          <div class="accordion-panel">
+            <p>There are eight figures for Carinosa and eight figures for Itik-Itik.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger">Can I use this for teaching?</button>
+          <div class="accordion-panel">
+            <p>Yes. The lessons are useful for class practice, school performances, and choreography review.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">FolkDance</a>
+        <p>Preserving Philippine folk traditions through modern education.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@folkdance.com</p>
+        <p>Phone: +63 912 345 6789</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>Copyright 2026 Folkdance Tutorial Learning Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">Up</button>
+  <div class="floating-socials">
+    <a href="#" aria-label="WhatsApp">WA</a>
+    <a href="#" aria-label="Facebook">FB</a>
+    <a href="#" aria-label="Instagram">IG</a>
+  </div>
+  <audio id="bgMusic" loop src="https://assets.mixkit.co/music/preview/mixkit-joyful-upbeat-folk-accordion-1316.mp3"></audio>
+</body>
+</html>

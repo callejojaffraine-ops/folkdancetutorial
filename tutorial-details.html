@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tinikling Tutorial Details</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body class="page-details">
+  <div id="preloader" class="preloader">
+    <div class="preloader__spinner"></div>
+    <p>Opening the tutorial...</p>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">FolkDance</a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="tutorials.html" class="nav__link">Tutorials</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn" id="musicToggle" aria-label="Toggle background music">🎵</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section page-header page-header--small">
+      <div class="container">
+        <span class="eyebrow">Tinikling tutorial</span>
+        <h1>Master Tinikling with step-by-step guidance</h1>
+        <p>Experience the story, technique, and rhythm of this beloved Philippine folk dance.</p>
+      </div>
+    </section>
+
+    <section class="section tutorial-detail">
+      <div class="container grid grid--2">
+        <div class="detail-video glass-card">
+          <div class="video-frame">
+            <video id="detailVideo" src="https://www.w3schools.com/html/mov_bbb.mp4" preload="metadata"></video>
+            <div class="video-controls" id="videoControls">
+              <button class="control-btn" id="playPause">Play</button>
+              <div class="progress-bar" id="videoProgress">
+                <div class="progress-filled"></div>
+              </div>
+              <select id="speedSelect" class="speed-select">
+                <option value="0.75">0.75×</option>
+                <option value="1" selected>1×</option>
+                <option value="1.25">1.25×</option>
+                <option value="1.5">1.5×</option>
+              </select>
+              <button class="control-btn" id="fullscreenBtn">Fullscreen</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-info glass-card">
+          <h2>Tinikling Essentials</h2>
+          <p>Originating from Leyte, Tinikling is a lively folk dance performed between bamboo poles. This tutorial teaches footwork, timing, and cultural context in an easy-learning format.</p>
+          <ul class="detail-list">
+            <li><strong>Origin:</strong> Leyte</li>
+            <li><strong>Region:</strong> Visayas</li>
+            <li><strong>Costume:</strong> Baro't saya and camisa de chino</li>
+            <li><strong>Music:</strong> Fast-paced rondalla with bamboo rhythm</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section figures">
+      <div class="container">
+        <div class="section__header">
+          <span class="eyebrow">Figure-by-figure learning</span>
+          <h2>Structured walkthrough for every segment</h2>
+        </div>
+        <div class="figure-grid">
+          <article class="figure-card glass-card">
+            <div class="figure-card__media"></div>
+            <h3>Figure 1</h3>
+            <p>Learn the basic step pattern, weight shifts, and bamboo timing.</p>
+            <div class="figure-meta">Progress: <strong>25%</strong></div>
+          </article>
+          <article class="figure-card glass-card">
+            <div class="figure-card__media"></div>
+            <h3>Figure 2</h3>
+            <p>Practice partner alignment and rhythmic footwork with confidence.</p>
+            <div class="figure-meta">Progress: <strong>50%</strong></div>
+          </article>
+          <article class="figure-card glass-card">
+            <div class="figure-card__media"></div>
+            <h3>Figure 3</h3>
+            <p>Refine the final turns, flourishes, and finishing movement.</p>
+            <div class="figure-meta">Progress: <strong>75%</strong></div>
+          </article>
+          <article class="figure-card glass-card">
+            <div class="figure-card__media"></div>
+            <h3>Entrance</h3>
+            <p>Start with a confident entry and set your timing before the rhythm begins.</p>
+            <div class="figure-meta">Progress: <strong>10%</strong></div>
+          </article>
+          <article class="figure-card glass-card">
+            <div class="figure-card__media"></div>
+            <h3>Formation</h3>
+            <p>Discover spacing, partner placement, and visual flow in group performances.</p>
+            <div class="figure-meta">Progress: <strong>85%</strong></div>
+          </article>
+          <article class="figure-card glass-card">
+            <div class="figure-card__media"></div>
+            <h3>Exit</h3>
+            <p>Finish gracefully with a polished exit and stage presence.</p>
+            <div class="figure-meta">Progress: <strong>100%</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section notes">
+      <div class="container glass-card notes-panel">
+        <h3>Practice notes</h3>
+        <ul>
+          <li>Focus on timing with the bamboo poles.</li>
+          <li>Keep your steps light and controlled.</li>
+          <li>Remember the cultural meaning behind each movement.</li>
+          <li>Use a mirror or friend for partner alignment.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">FolkDance</a>
+        <p>Keep your tutorials accessible for every learner.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@folkdance.com</p>
+        <p>Phone: +63 912 345 6789</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social-links">
+          <a href="#">FB</a>
+          <a href="#">IG</a>
+          <a href="#">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>© 2026 Folkdance Tutorial Learning Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+  <div class="floating-socials">
+    <a href="#" aria-label="WhatsApp">WA</a>
+    <a href="#" aria-label="Facebook">FB</a>
+    <a href="#" aria-label="Instagram">IG</a>
+  </div>
+  <audio id="bgMusic" loop src="https://assets.mixkit.co/music/preview/mixkit-joyful-upbeat-folk-accordion-1316.mp3"></audio>
+</body>
+</html>
